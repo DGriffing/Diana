@@ -1,0 +1,169 @@
+/* Diana Griffing: Personal Website  */
+
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400);
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+body {
+	font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: #E9EAEE;
+	font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+}
+h2 {
+	color: #006E25;
+}
+div {
+	padding: 20px;
+	display: block;
+}
+i {
+	font-size: 15px;
+	font-style: italic;
+}
+em {
+	font-size: 17px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+
+figure {
+    display: none;
+    margin: 10px;
+}
+img {
+	vertical-align: top;
+	max-height: 300px;
+	margin-left: 1em;
+	border-radius: 5px;
+}
+figure figcaption {
+    text-align: center;
+    font-size: 17px;
+    font-style: italic;
+}
+.picLeft {
+	float: left;
+}
+.picRight {
+	float: right;
+}
+
+
+nav {
+	position: fixed;
+	z-index: 1;
+	background-color: #181c22;
+	padding-left: 15px;
+	width: 100%;
+}
+nav a {
+	color: white;
+	font-size: 16px;
+	padding: 0.5em;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+nav a:hover {
+	text-decoration: none;
+	color: #006E25;
+}
+
+
+#Header{
+	padding-top: 3em;
+	width: 100%;
+}
+
+
+#About, #Contact{
+	background-color: #dbdce3;
+	width: 100%;
+	padding-top: 1em; 
+}
+
+
+
+
+
+footer {
+	text-align: right;
+	border-top: 3px solid #006E25;
+	background-color: #afb3c2;
+	font-size: 12px;
+	padding-right: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+
+
+
+@media screen and (min-width: 768px){
+
+	body {
+		font-size: 20px;
+	}
+	h2 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	p {
+		text-align: center;
+	}
+	i {
+		font-size: 18px;
+	}
+	em {
+		font-size: 20px;
+	}
+
+	figure {
+		display: inline-block;
+	}
+
+
+	nav {
+		background-color: rgba(24, 28, 34, .8);
+	}
+	nav a{
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+
+	#Header {
+		background-image: url("../img/green-sm.jpg");
+		background-repeat: no-repeat;
+		min-height: 300px;
+		color: white;
+		text-align: right;
+		background-position: center;
+	}
+	#Header p {
+		text-align: right;
+	}
+}
+
+@media screen and (min-width: 992px){
+	#Header {
+		background-image: url("../img/green-md.jpg");
+	}
+	#Header h1 {
+		font-size: 4em;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	#Header {
+		background-image: url("../img/green-lg.jpg");
+	}
+}
+

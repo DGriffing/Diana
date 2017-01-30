@@ -1,0 +1,26 @@
+<article class="clearfix contact">
+    ::before
+    <h1>Contact</h1>
+    <p>
+        I am currently searching for UX Research / Design / Development opportunities in Seattle, WA starting in Summer / Fall 2017
+        <br>
+        Please reach out to me using the form below.
+    </p>
+
+    <form id="contact-form">
+        <label>Name<span class="error">*</span></label>
+        <input class="form-field" name="name" placeholder="Type Here" onblur="checkValue(this)">
+
+        <label>Email<span class="error">*</span></label>
+        <input class="form-field" name="email" type="email" placeholder="Type Here" onblur="checkValue(this)">
+
+        <label>Message<span class="error">*</span></label>
+        <textarea class="form-field" name="message" placeholder="Type Here" onblur="checkValue(this)"></textarea>
+        <input type="text" name="_gotcha" style="display:none">
+
+        <input id="submit" name="submit" type="submit" class="button" value="Submit" onclick="return checkValues()">
+        <input type="hidden" name="_next" value="thankyou.html">
+        <input type="hidden" name="_subject" value="Website Contact Submission">
+    </form>
+    ::after
+</article>
