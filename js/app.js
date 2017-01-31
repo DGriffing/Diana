@@ -2,7 +2,7 @@
 
 angular.module('DianaApp', ['ngSanitize', 'ui.router', 'ui.bootstrap'])
 
-DianaApp.config(function($stateProvider, $urlRouterProvider){
+.config(function($stateProvider, $urlRouterProvider){
 	$stateProvider
 
 		.state('about', {
