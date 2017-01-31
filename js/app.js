@@ -1,26 +1,43 @@
 'use strict';
 
-angular.module('DianaApp', ['ngSanitize', 'ui.router', 'ui.bootstrap', 'firebase'])
+angular.module('DianaApp', ['ngSanitize', 'ui.router', 'ui.bootstrap'])
 
-.config(function($stateProvider, $urlRouterProvider){
+DianaApp.config(function($stateProvider, $urlRouterProvider){
 	$stateProvider
 
 		.state('about', {
 			url: '/',
-			templateUrl: 'partials/about.html'
+			templateUrl: 'partials/about.html',
+			controller: 'AboutCtrl'
 		})
 
 		.state('contact', {
 			url: '/contact', 
 			templateUrl: 'partials/contact.html',
-			// controller: 'ContactCtrl'
+			controller: 'ContactCtrl'
 		})
 
 		.state('portfolio', {
 			url: '/portfolio',
-            templateUrl: 'partials/portfolio.html'
+            templateUrl: 'partials/portfolio.html',
+			controller: 'PortfolioCtrl'
 		})
 
 	// Sends all false paths to about
 	$urlRouterProvider.otherwise('/');
 })
+
+//For about view
+.controller('AboutCtrl', ['$scope', '$http', function($scope, $http) {
+
+}])
+
+//For contact view
+.controller('ContactCtrl', ['$scope', '$http', function($scope, $http) {
+
+}])
+
+//For portfolio view
+.controller('PortfolioCtrl', ['$scope', '$http', function($scope, $http) {
+
+}])
